@@ -130,19 +130,20 @@ position: relative;
 }
 }
 
-@media only screen and (min-width: 768px) and (max-width:991px) and (orientation:landscape){
+@media only screen and (min-width: 768px) and (max-width:991px) and (orientation:portrait){
    
     .grid-container{
 
         display: -ms-grid;
         display: grid;
-        grid-gap: 65px;
+        grid-gap: 35px;
         min-width: 10%;
         max-width: 90%;
         grid-template-columns:20% 20% 20% 20% 20%;
         grid-template-rows:25% 25% 25% 25%;
         margin-top: 3em;
         margin-left:2.5em;
+        height: 80vh;
     }
     
     body{
@@ -158,6 +159,7 @@ position: relative;
        border: 5px solid white;
        box-shadow:0px 0px 50px white;
        margin-top: 2em;
+       margin-left: 1.5em;
        animation-name:fade-in;
        animation-duration:5s;
        animation-timing-function: linear;
@@ -186,12 +188,16 @@ position: relative;
         grid-row: 1/1;
         text-align: center;
         font-size: 50px;
+   right:0.5em ;
+   width: 755px;
+   padding-top: 15%;
+   margin: 0 auto;
+   left: 20px;
     }
     
     .info{
         grid-column:1/5;
         grid-row:2/2;
-        text-align: center;
         font-size: 25px;
 
     }
@@ -199,8 +205,9 @@ position: relative;
     .info h3{
         position: absolute;
         top: 15%;
-        left: 20%;
+        left: 10%;
         text-align: center;
+        padding-top: 5%;
     }
     
     .ford{
@@ -209,6 +216,7 @@ position: relative;
         text-align: center;
         height: 190px;
         padding-top: 1em;
+        left: 3%;
     }
     
     .ford img{
@@ -217,7 +225,7 @@ position: relative;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: 1;
-        width: 270px;
+        width: 200px;
       height: 150px;
     }
     
@@ -238,7 +246,7 @@ position: relative;
         grid-column: 3/5;
         grid-row: 3/3;
         height:190px;
-        padding-top: 10%;
+        padding-top: 1em;
         text-align: center;
     }
     
@@ -249,13 +257,13 @@ position: relative;
         animation-timing-function: linear;
         animation-delay: 0s;
         animation-iteration-count: 1;
-        width: 270px;
+        width: 200px;
         height: 150px;
     }
     
     marquee{
-        font-size: 10px;
-        width: 30px;
+        font-size: 20px;
+        width: 60px;
     }
 
     .footer{
@@ -265,11 +273,12 @@ position: relative;
         font-size: 20px;
         margin-top: 30px;
         justify-content: center;
+        padding-top: 10%;
     }
 
     .footer marquee{
         width: 90%;
-        font-size: 20px;
+        font-size: 30px;
     }
 
 }
