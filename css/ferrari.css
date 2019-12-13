@@ -21,7 +21,7 @@ body {
     background: no-repeat;
     grid-gap: 10px;
     grid-template-columns: repeat(7,150px);
-    grid-template-rows: repeat(9,150px);
+    grid-template-rows: repeat(14,150px);
     background-color:white;
     color: #444;
 }
@@ -48,6 +48,20 @@ body {
     grid-column: 1/4;
     grid-row: 6/9;
     text-align: center;
+}
+
+.d{
+    grid-column: 2/6;
+    grid-row: 9/14;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.e{
+    grid-column: 1/8;
+    grid-row: 8/14;
+    background: url('https://auto.ferrari.com/en_US/wp-content/uploads/sites/7/2013/07/specs-1024x6951.jpg');
 }
 
 th{
@@ -111,4 +125,20 @@ td{
       .navbar a:hover {
         background: #ddd;
         color: black;
+      }
+      .c > .d > .goomba{
+        left: 50%;
+        margin-right: -50%;
+        position: absolute;
+        transform: translate(-50%, 50%)
+      }
+     .background{
+          z-index: 99999;
+          opacity: 0;
+          transition: 9s ease;
+          height: 100vh;
+      }
+      .background::after{
+          visibility: hidden;
+          z-index: 0;
       }
