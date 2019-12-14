@@ -10,7 +10,7 @@
     max-width: 100%;
     grid-template-columns:20% 20% 20% 20% 20%;
     grid-template-rows:25% 25% 25% 25%;
-
+    overflow: hidden;
     margin-left: 5em;
     
 }
@@ -130,7 +130,7 @@ position: relative;
 }
 }
 
-@media only screen and (min-width: 768px) and (max-width:991px) and (orientation:portrait){
+@media only screen and (max-width:991px) and (orientation:portrait){
    
     .grid-container{
 
@@ -282,7 +282,7 @@ position: relative;
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width:991px) and (orientation:landscape){
+@media only screen and (max-width:991px) and (orientation:landscape){
    
     .grid-container{
 
@@ -423,5 +423,5 @@ position: relative;
         width: 90%;
         font-size: 20px;
     }
-
 }
+
