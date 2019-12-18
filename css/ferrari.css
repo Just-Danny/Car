@@ -59,7 +59,6 @@ body {
 .e{
     grid-column: 1/8;
     grid-row: 8/14;
-    background: url('https://auto.ferrari.com/en_US/wp-content/uploads/sites/7/2013/07/specs-1024x6951.jpg');
 }
 
 th{
@@ -129,6 +128,7 @@ td{
       }
       .c > .d > .goomba{
         left: 50%;
+        top: 170%;
         margin-right: -50%;
         position: absolute;
         transform: translate(-50%, 50%)
